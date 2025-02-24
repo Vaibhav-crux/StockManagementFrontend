@@ -129,7 +129,7 @@ stock-frontend/
 Clone the repository:
 
 ```bash
-git clone https://github.com/starlabsTechnologies/stock-frontend.git
+git clone https://github.com/Vaibhav-crux/StockManagementFrontend.git
 cd stock-frontend
 ```
 
