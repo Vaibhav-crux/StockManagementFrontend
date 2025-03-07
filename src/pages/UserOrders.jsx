@@ -7,6 +7,10 @@ import axios from "axios";
 const UserOrders = () => {
   const columns = [
     {
+      key: "ticker", // Add the ticker field as the Symbol column
+      label: "Symbol",
+    },
+    {
       key: "purchase_price",
       label: "Price",
     },
@@ -14,7 +18,6 @@ const UserOrders = () => {
       key: "purchase_qty",
       label: "Quantity",
     },
-
     {
       key: "timestamp",
       label: "Date/Time",
@@ -26,6 +29,7 @@ const UserOrders = () => {
     { key: "severity", label: "Severity" },
     { key: "timestamp", label: "Date / Time" },
   ];
+
   const { token } = useAuth();
   const [total, setTotal] = useState(0);
   const [showQualityTable, setShowQualityTable] = useState(false);
@@ -81,6 +85,7 @@ const UserOrders = () => {
       return [];
     }
   };
+
   const handleToggleTable = () => {
     setShowQualityTable((prev) => !prev);
   };
@@ -91,7 +96,7 @@ const UserOrders = () => {
       <div className="py-4 flex justify-between items-center">
         <div className="w-[55%]">
           <h1 className="text-3xl font-bold mb-4 text-end">
-            {showQualityTable ? "Quality Check Data" : "Orders"}{" "}
+            {showQualityTable ? "Quality Check Data" : "Orders"}
           </h1>
         </div>
         <div>

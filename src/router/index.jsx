@@ -4,7 +4,6 @@ import Login from "../pages/Login";
 import List from "../pages/List";
 import OrderList from "../pages/OrderList";
 import Cart from "../pages/Cart";
-import Payment from "../pages/Payment";
 import ProtectedRoute from "../components/protectedRoute/ProtectedRoute";
 import Portfolio from "../pages/Portfolio";
 import UserOrders from "../pages/UserOrders";
